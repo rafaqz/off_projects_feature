@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OFF Projects Feature feature.
+ */
+
+include_once 'off_projects_feature.features.inc';
