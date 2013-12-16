@@ -15,6 +15,8 @@ function off_projects_feature_user_default_permissions() {
     'name' => 'create project content',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
@@ -24,6 +26,8 @@ function off_projects_feature_user_default_permissions() {
     'name' => 'delete any project content',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
@@ -33,6 +37,8 @@ function off_projects_feature_user_default_permissions() {
     'name' => 'delete own project content',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
@@ -42,6 +48,8 @@ function off_projects_feature_user_default_permissions() {
     'name' => 'edit any project content',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
@@ -51,6 +59,8 @@ function off_projects_feature_user_default_permissions() {
     'name' => 'edit own project content',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
