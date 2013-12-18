@@ -24,6 +24,7 @@ features[fe_block_boxes][] = add_project
 features[fe_block_settings][] = quicktabs-projects
 features[features_api][] = api:2
 features[field_base][] = field_project_type
+features[field_instance][] = comment-comment_node_project-comment_body
 features[field_instance][] = node-project-body
 features[field_instance][] = node-project-field_project_type
 features[field_instance][] = node-project-group_group
