@@ -69,7 +69,7 @@ function off_projects_feature_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Body',
+    'label' => 'Description',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -215,8 +215,8 @@ function off_projects_feature_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
   t('Comment');
+  t('Description');
   t('Determine if this is an OG group.');
   t('Group');
   t('Project Type');
