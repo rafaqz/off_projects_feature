@@ -10,6 +10,36 @@
 function off_projects_feature_og_features_default_permissions() {
   $permissions = array();
 
+  // Exported og permission: 'node:closed_group:update field_project_type field'
+  $permissions['node:closed_group:update field_project_type field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:closed_group:view field_project_type field'
+  $permissions['node:closed_group:view field_project_type field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:group:update field_project_type field'
+  $permissions['node:group:update field_project_type field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:group:view field_project_type field'
+  $permissions['node:group:view field_project_type field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+      'member' => 'member',
+      'non-member' => 'non-member',
+    ),
+  );
+
   // Exported og permission: 'node:project:add user'
   $permissions['node:project:add user'] = array(
     'roles' => array(
