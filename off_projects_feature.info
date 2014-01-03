@@ -1,8 +1,6 @@
 name = OFF Projects Feature
 core = 7.x
 package = Collabco
-dependencies[] = collabco_groups_feature
-dependencies[] = collabco_settings_feature
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = list
