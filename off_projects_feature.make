@@ -3,5 +3,5 @@ core = 7.x
 
 api = 2
 
-projects[quicktabs][version] = "3.4"
-projects[quicktabs][subdir] = "contrib"
+projects[views_field_view][version] = "1.1"
+projects[views_field_view][subdir] = "contrib"
