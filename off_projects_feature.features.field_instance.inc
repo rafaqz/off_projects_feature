@@ -134,10 +134,9 @@ function off_projects_feature_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'type' => 'hidden',
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -161,7 +160,7 @@ function off_projects_feature_field_default_field_instances() {
     'bundle' => 'project',
     'default_value' => array(
       0 => array(
-        'value' => 1,
+        'value' => 0,
       ),
     ),
     'deleted' => 0,
@@ -183,14 +182,14 @@ function off_projects_feature_field_default_field_instances() {
           'field_name' => FALSE,
         ),
         'type' => 'og_group_subscribe',
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
     'display_label' => 1,
     'entity_type' => 'node',
     'field_name' => 'group_group',
     'label' => 'Group',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -207,10 +206,11 @@ function off_projects_feature_field_default_field_instances() {
       ),
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'options',
       'settings' => array(
         'display_label' => 0,
-        'og_hide' => TRUE,
+        'og_hide' => 0,
       ),
       'type' => 'options_onoff',
       'weight' => 0,
