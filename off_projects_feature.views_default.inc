@@ -142,7 +142,14 @@ function off_projects_feature_views_default_views() {
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['name']['field'] = 'name';
   $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['element_type'] = 'h2';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Global: View */
   $handler->display->display_options['fields']['view']['id'] = 'view';
   $handler->display->display_options['fields']['view']['table'] = 'views';
@@ -151,6 +158,10 @@ function off_projects_feature_views_default_views() {
   $handler->display->display_options['fields']['view']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view']['view'] = 'projects_by_type';
   $handler->display->display_options['fields']['view']['arguments'] = '[!tid]';
+  /* Sort criterion: Taxonomy term: Weight */
+  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
   /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
@@ -190,12 +201,6 @@ function off_projects_feature_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Header: Global: Unfiltered text */
-  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
-  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['content'] = '[description]';
-  $handler->display->display_options['header']['area_text_custom']['tokenize'] = TRUE;
   /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
@@ -218,13 +223,6 @@ function off_projects_feature_views_default_views() {
   $handler->display->display_options['fields']['rendered_entity']['display'] = 'view';
   $handler->display->display_options['fields']['rendered_entity']['view_mode'] = 'teaser';
   $handler->display->display_options['fields']['rendered_entity']['bypass_access'] = 0;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
