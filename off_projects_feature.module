@@ -5,3 +5,31 @@
  */
 
 include_once 'off_projects_feature.features.inc';
+
+/**
+ * Implements hook_collabco_integration().
+ */
+function off_projects_feature_collabco_integration() {
+  // Add links to views if a module wants to do that.
+  return array(
+    'off_projects_feature' => array(
+      'entity' => array(
+        'node'=> array('project'),
+      ),
+      'views' => array(
+        'projects' => array(
+          'page' => array(
+            'subscribe_flag' => array(
+              'group_type' => 'node',
+              'entity_type' => 'none',
+            ),
+            'add_content_link' => array(
+              'areas' => array('header'),
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
