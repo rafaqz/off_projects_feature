@@ -21,6 +21,7 @@ function off_projects_feature_og_features_default_permissions() {
   $permissions['node:closed_group:view field_project_type field'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
+      'member' => 'member',
     ),
   );
 
