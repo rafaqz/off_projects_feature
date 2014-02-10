@@ -18,6 +18,7 @@ features[field_instance][] = comment-comment_node_project-comment_body
 features[field_instance][] = node-project-body
 features[field_instance][] = node-project-field_project_type
 features[field_instance][] = node-project-group_group
+features[field_instance][] = node-project-tags
 features[node][] = project
 features[og_features_permission][] = node:closed_group:update field_project_type field
 features[og_features_permission][] = node:closed_group:view field_project_type field
