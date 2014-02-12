@@ -366,6 +366,11 @@ function off_projects_feature_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:project:update og_group_ref field'
+  $permissions['node:project:update og_group_ref field'] = array(
+    'roles' => array(),
+  );
+
   // Exported og permission: 'node:project:update og_user_node field'
   $permissions['node:project:update og_user_node field'] = array(
     'roles' => array(
@@ -415,6 +420,11 @@ function off_projects_feature_og_features_default_permissions() {
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
+  );
+
+  // Exported og permission: 'node:project:update tags field'
+  $permissions['node:project:update tags field'] = array(
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:project:view body field'
@@ -524,6 +534,11 @@ function off_projects_feature_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:project:view og_group_ref field'
+  $permissions['node:project:view og_group_ref field'] = array(
+    'roles' => array(),
+  );
+
   // Exported og permission: 'node:project:view og_user_node field'
   $permissions['node:project:view og_user_node field'] = array(
     'roles' => array(
@@ -531,6 +546,11 @@ function off_projects_feature_og_features_default_permissions() {
       'member' => 'member',
       'non-member' => 'non-member',
     ),
+  );
+
+  // Exported og permission: 'node:project:view tags field'
+  $permissions['node:project:view tags field'] = array(
+    'roles' => array(),
   );
 
   return $permissions;
