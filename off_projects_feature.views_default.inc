@@ -12,8 +12,8 @@ function off_projects_feature_views_default_views() {
 
   $view = new view();
   $view->name = 'projects';
-  $view->description = '';
-  $view->tag = 'default';
+  $view->description = 'Displays a view for each project type term, in tabs.';
+  $view->tag = 'Projects Feature';
   $view->base_table = 'taxonomy_term_data';
   $view->human_name = 'Projects';
   $view->core = 7;
@@ -115,8 +115,8 @@ function off_projects_feature_views_default_views() {
 
   $view = new view();
   $view->name = 'projects_by_type';
-  $view->description = '';
-  $view->tag = 'default';
+  $view->description = 'Shows Project teasers filtered by project type term.';
+  $view->tag = 'Projects Feature';
   $view->base_table = 'node';
   $view->human_name = 'Projects by Type';
   $view->core = 7;
