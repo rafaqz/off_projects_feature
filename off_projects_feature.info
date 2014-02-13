@@ -5,6 +5,7 @@ dependencies[] = collabco_groups_feature
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = node
+dependencies[] = off_tags_feature
 dependencies[] = og
 dependencies[] = og_field_access
 dependencies[] = og_ui
