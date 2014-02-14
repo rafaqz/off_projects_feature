@@ -14,7 +14,11 @@ function off_projects_feature_collabco_integration() {
   return array(
     'off_projects_feature' => array(
       'entity' => array(
-        'node'=> array('project'),
+        'node'=> array(
+          'project' => array(
+            'add_content_link' => TRUE,
+          ),
+        ),
       ),
       'views' => array(
         'projects' => array(
