@@ -422,11 +422,6 @@ function off_projects_feature_og_features_default_permissions() {
     ),
   );
 
-  // Exported og permission: 'node:project:update tags field'
-  $permissions['node:project:update tags field'] = array(
-    'roles' => array(),
-  );
-
   // Exported og permission: 'node:project:view body field'
   $permissions['node:project:view body field'] = array(
     'roles' => array(
@@ -546,11 +541,6 @@ function off_projects_feature_og_features_default_permissions() {
       'member' => 'member',
       'non-member' => 'non-member',
     ),
-  );
-
-  // Exported og permission: 'node:project:view tags field'
-  $permissions['node:project:view tags field'] = array(
-    'roles' => array(),
   );
 
   return $permissions;
