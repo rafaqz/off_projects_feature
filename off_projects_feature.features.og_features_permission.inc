@@ -276,13 +276,6 @@ function off_projects_feature_og_features_default_permissions() {
     ),
   );
 
-  // Exported og permission: 'node:project:update field_category field'
-  $permissions['node:project:update field_category field'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
   // Exported og permission: 'node:project:update field_first_name field'
   $permissions['node:project:update field_first_name field'] = array(
     'roles' => array(
@@ -428,13 +421,6 @@ function off_projects_feature_og_features_default_permissions() {
       'administrator member' => 'administrator member',
       'member' => 'member',
       'non-member' => 'non-member',
-    ),
-  );
-
-  // Exported og permission: 'node:project:view field_category field'
-  $permissions['node:project:view field_category field'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
     ),
   );
 
