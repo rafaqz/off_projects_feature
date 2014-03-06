@@ -124,5 +124,4 @@ features[variable][] = pathauto_taxonomy_term_project_type_pattern
 features[views_view][] = projects
 features[views_view][] = projects_by_type
 features_exclude[dependencies][collabco_settings_feature] = collabco_settings_feature
-features_exclude[dependencies][views_bootstrap] = views_bootstrap
 features_exclude[field_base][group_group] = group_group
