@@ -15,6 +15,7 @@ dependencies[] = taxonomy
 dependencies[] = taxonomy_access_fix
 dependencies[] = text
 dependencies[] = views
+dependencies[] = views_field_view
 dependencies[] = views_content_cache
 dependencies[] = views_foundation
 features[ctools][] = strongarm:strongarm:1
