@@ -103,7 +103,7 @@ function off_projects_feature_strongarm() {
         'social_share' => array(
           'teaser' => array(
             'weight' => '2',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
         ),
       ),
