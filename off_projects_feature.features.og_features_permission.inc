@@ -10,37 +10,6 @@
 function off_projects_feature_og_features_default_permissions() {
   $permissions = array();
 
-  // Exported og permission: 'node:closed_group:update field_project_type field'
-  $permissions['node:closed_group:update field_project_type field'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
-  // Exported og permission: 'node:closed_group:view field_project_type field'
-  $permissions['node:closed_group:view field_project_type field'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
-  );
-
-  // Exported og permission: 'node:group:update field_project_type field'
-  $permissions['node:group:update field_project_type field'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
-  // Exported og permission: 'node:group:view field_project_type field'
-  $permissions['node:group:view field_project_type field'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-      'non-member' => 'non-member',
-    ),
-  );
-
   // Exported og permission: 'node:project:add user'
   $permissions['node:project:add user'] = array(
     'roles' => array(
@@ -50,6 +19,13 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:administer group'
   $permissions['node:project:administer group'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:project:approve and deny subscription'
+  $permissions['node:project:approve and deny subscription'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
@@ -215,7 +191,9 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:subscribe without approval'
   $permissions['node:project:subscribe without approval'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'non-member' => 'non-member',
+    ),
   );
 
   // Exported og permission: 'node:project:unsubscribe'
@@ -319,6 +297,11 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:update field_organisation_website field'
   $permissions['node:project:update field_organisation_website field'] = array(
+    'roles' => array(),
+  );
+
+  // Exported og permission: 'node:project:update field_project_people field'
+  $permissions['node:project:update field_project_people field'] = array(
     'roles' => array(),
   );
 
@@ -468,6 +451,11 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:view field_organisation_website field'
   $permissions['node:project:view field_organisation_website field'] = array(
+    'roles' => array(),
+  );
+
+  // Exported og permission: 'node:project:view field_project_people field'
+  $permissions['node:project:view field_project_people field'] = array(
     'roles' => array(),
   );
 
