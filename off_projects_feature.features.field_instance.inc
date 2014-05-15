@@ -43,6 +43,119 @@ function off_projects_feature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'field_collection_item-field_project_people-field_project_role'
+  $field_instances['field_collection_item-field_project_people-field_project_role'] = array(
+    'bundle' => 'field_project_people',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'The role of the user in the project',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_project_role',
+    'label' => 'Role',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'email' => 'email',
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'php_code' => 'php_code',
+          'plain_text' => 'plain_text',
+          'wiki' => 'wiki',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'email' => array(
+              'weight' => 0,
+            ),
+            'filtered_html' => array(
+              'weight' => -10,
+            ),
+            'full_html' => array(
+              'weight' => -8,
+            ),
+            'php_code' => array(
+              'weight' => -7,
+            ),
+            'plain_text' => array(
+              'weight' => -9,
+            ),
+            'wiki' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_project_people-field_project_user_ref'
+  $field_instances['field_collection_item-field_project_people-field_project_user_ref'] = array(
+    'bundle' => 'field_project_people',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'entityconnect_unload_add' => 1,
+    'entityconnect_unload_edit' => 1,
+    'field_name' => 'field_project_user_ref',
+    'label' => 'Name(s)',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'STARTS_WITH',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete_tags',
+      'weight' => 32,
+    ),
+  );
+
   // Exported field_instance: 'node-project-body'
   $field_instances['node-project-body'] = array(
     'bundle' => 'project',
@@ -118,6 +231,49 @@ function off_projects_feature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-project-field_project_people'
+  $field_instances['node-project-field_project_people'] = array(
+    'bundle' => 'project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_project_people',
+    'label' => 'People',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 33,
+    ),
+  );
+
   // Exported field_instance: 'node-project-field_project_type'
   $field_instances['node-project-field_project_type'] = array(
     'bundle' => 'project',
@@ -168,12 +324,9 @@ function off_projects_feature_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'og_ui',
-        'settings' => array(
-          'field_name' => FALSE,
-        ),
-        'type' => 'og_group_subscribe',
-        'weight' => 2,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'inline',
@@ -223,7 +376,11 @@ function off_projects_feature_field_default_field_instances() {
   t('Description');
   t('Determine if this is an OG group.');
   t('Group');
+  t('Name(s)');
+  t('People');
   t('Project Type');
+  t('Role');
+  t('The role of the user in the project');
 
   return $field_instances;
 }

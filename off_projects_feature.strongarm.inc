@@ -98,12 +98,19 @@ function off_projects_feature_strongarm() {
         'path' => array(
           'weight' => '30',
         ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'social_share' => array(
           'teaser' => array(
             'weight' => '2',
             'visible' => FALSE,
+          ),
+          'default' => array(
+            'weight' => '4',
+            'visible' => TRUE,
           ),
         ),
       ),
