@@ -38,13 +38,6 @@ function off_projects_feature_og_features_default_permissions() {
     ),
   );
 
-  // Exported og permission: 'node:project:create closed_group content'
-  $permissions['node:project:create closed_group content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
   // Exported og permission: 'node:project:create conversation content'
   $permissions['node:project:create conversation content'] = array(
     'roles' => array(
@@ -75,15 +68,15 @@ function off_projects_feature_og_features_default_permissions() {
     ),
   );
 
-  // Exported og permission: 'node:project:delete any basic_page content'
-  $permissions['node:project:delete any basic_page content'] = array(
+  // Exported og permission: 'node:project:create private_group content'
+  $permissions['node:project:create private_group content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
   );
 
-  // Exported og permission: 'node:project:delete any closed_group content'
-  $permissions['node:project:delete any closed_group content'] = array(
+  // Exported og permission: 'node:project:delete any basic_page content'
+  $permissions['node:project:delete any basic_page content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
@@ -117,15 +110,15 @@ function off_projects_feature_og_features_default_permissions() {
     ),
   );
 
-  // Exported og permission: 'node:project:delete own basic_page content'
-  $permissions['node:project:delete own basic_page content'] = array(
+  // Exported og permission: 'node:project:delete any private_group content'
+  $permissions['node:project:delete any private_group content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
   );
 
-  // Exported og permission: 'node:project:delete own closed_group content'
-  $permissions['node:project:delete own closed_group content'] = array(
+  // Exported og permission: 'node:project:delete own basic_page content'
+  $permissions['node:project:delete own basic_page content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
@@ -156,6 +149,13 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:delete own organisation content'
   $permissions['node:project:delete own organisation content'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:project:delete own private_group content'
+  $permissions['node:project:delete own private_group content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
@@ -210,13 +210,6 @@ function off_projects_feature_og_features_default_permissions() {
     ),
   );
 
-  // Exported og permission: 'node:project:update any closed_group content'
-  $permissions['node:project:update any closed_group content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
   // Exported og permission: 'node:project:update any conversation content'
   $permissions['node:project:update any conversation content'] = array(
     'roles' => array(
@@ -241,6 +234,13 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:update any organisation content'
   $permissions['node:project:update any organisation content'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:project:update any private_group content'
+  $permissions['node:project:update any private_group content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
@@ -302,7 +302,10 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:update field_project_people field'
   $permissions['node:project:update field_project_people field'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'administrator member' => 'administrator member',
+      'member' => 'member',
+    ),
   );
 
   // Exported og permission: 'node:project:update field_project_type field'
@@ -336,7 +339,9 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:update og_group_ref field'
   $permissions['node:project:update og_group_ref field'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
   );
 
   // Exported og permission: 'node:project:update og_user_node field'
@@ -348,13 +353,6 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:update own basic_page content'
   $permissions['node:project:update own basic_page content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
-  // Exported og permission: 'node:project:update own closed_group content'
-  $permissions['node:project:update own closed_group content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
@@ -385,6 +383,13 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:update own organisation content'
   $permissions['node:project:update own organisation content'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:project:update own private_group content'
+  $permissions['node:project:update own private_group content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
@@ -456,7 +461,11 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:view field_project_people field'
   $permissions['node:project:view field_project_people field'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'administrator member' => 'administrator member',
+      'member' => 'member',
+      'non-member' => 'non-member',
+    ),
   );
 
   // Exported og permission: 'node:project:view field_project_type field'
@@ -488,7 +497,9 @@ function off_projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:view og_group_ref field'
   $permissions['node:project:view og_group_ref field'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
   );
 
   // Exported og permission: 'node:project:view og_user_node field'
