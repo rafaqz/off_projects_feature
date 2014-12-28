@@ -4,15 +4,15 @@
  * Code for the OFF Projects Feature feature.
  */
 
-include_once 'off_projects_feature.features.inc';
+include_once 'projects_feature.features.inc';
 
 /**
- * Implements hook_collabco_integration().
+ * Implements hook_integration().
  */
-function off_projects_feature_collabco_integration() {
+function projects_feature_integration() {
   // Add links to views if a module wants to do that.
   return array(
-    'off_projects_feature' => array(
+    'projects_feature' => array(
       'entity' => array(
         'node'=> array(
           'project' => array(

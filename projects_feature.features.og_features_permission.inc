@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * off_projects_feature.features.og_features_permission.inc
+ * projects_feature.features.og_features_permission.inc
  */
 
 /**
  * Implements hook_og_features_default_permissions().
  */
-function off_projects_feature_og_features_default_permissions() {
+function projects_feature_og_features_default_permissions() {
   $permissions = array();
 
   // Exported og permission: 'node:project:add user'

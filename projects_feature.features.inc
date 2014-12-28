@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * off_projects_feature.features.inc
+ * projects_feature.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function off_projects_feature_ctools_plugin_api($module = NULL, $api = NULL) {
+function projects_feature_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,14 +16,14 @@ function off_projects_feature_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function off_projects_feature_views_api($module = NULL, $api = NULL) {
+function projects_feature_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_node_info().
  */
-function off_projects_feature_node_info() {
+function projects_feature_node_info() {
   $items = array(
     'project' => array(
       'name' => t('Project'),

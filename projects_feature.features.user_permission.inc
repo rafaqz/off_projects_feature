@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * off_projects_feature.features.user_permission.inc
+ * projects_feature.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function off_projects_feature_user_default_permissions() {
+function projects_feature_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'add terms in project_type'.

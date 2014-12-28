@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * off_projects_feature.features.field_base.inc
+ * projects_feature.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function off_projects_feature_field_default_field_bases() {
+function projects_feature_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_project_people'
