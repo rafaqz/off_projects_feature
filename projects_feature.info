@@ -1,6 +1,6 @@
-name = OFF Projects Feature
+name = Projects Feature
 core = 7.x
-package = Collabco
+package = Features
 dependencies[] = core_feature
 dependencies[] = groups_feature
 dependencies[] = ctools
