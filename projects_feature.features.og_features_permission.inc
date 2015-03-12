@@ -61,13 +61,6 @@ function projects_feature_og_features_default_permissions() {
     ),
   );
 
-  // Exported og permission: 'node:project:create organisation content'
-  $permissions['node:project:create organisation content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
   // Exported og permission: 'node:project:create private_group content'
   $permissions['node:project:create private_group content'] = array(
     'roles' => array(
@@ -98,13 +91,6 @@ function projects_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:project:delete any knowledge_object content'
   $permissions['node:project:delete any knowledge_object content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
-  // Exported og permission: 'node:project:delete any organisation content'
-  $permissions['node:project:delete any organisation content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
@@ -144,13 +130,6 @@ function projects_feature_og_features_default_permissions() {
     'roles' => array(
       'administrator member' => 'administrator member',
       'member' => 'member',
-    ),
-  );
-
-  // Exported og permission: 'node:project:delete own organisation content'
-  $permissions['node:project:delete own organisation content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
     ),
   );
 
@@ -232,13 +211,6 @@ function projects_feature_og_features_default_permissions() {
     ),
   );
 
-  // Exported og permission: 'node:project:update any organisation content'
-  $permissions['node:project:update any organisation content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
   // Exported og permission: 'node:project:update any private_group content'
   $permissions['node:project:update any private_group content'] = array(
     'roles' => array(
@@ -274,30 +246,6 @@ function projects_feature_og_features_default_permissions() {
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
-  );
-
-  // Exported og permission: 'node:project:update field_organisation_address field'
-  $permissions['node:project:update field_organisation_address field'] = array(
-    'roles' => array(),
-  );
-
-  // Exported og permission: 'node:project:update field_organisation_image field'
-  $permissions['node:project:update field_organisation_image field'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
-  // Exported og permission: 'node:project:update field_organisation_type field'
-  $permissions['node:project:update field_organisation_type field'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
-  // Exported og permission: 'node:project:update field_organisation_website field'
-  $permissions['node:project:update field_organisation_website field'] = array(
-    'roles' => array(),
   );
 
   // Exported og permission: 'node:project:update field_project_people field'
@@ -381,13 +329,6 @@ function projects_feature_og_features_default_permissions() {
     ),
   );
 
-  // Exported og permission: 'node:project:update own organisation content'
-  $permissions['node:project:update own organisation content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
   // Exported og permission: 'node:project:update own private_group content'
   $permissions['node:project:update own private_group content'] = array(
     'roles' => array(
@@ -429,34 +370,6 @@ function projects_feature_og_features_default_permissions() {
       'member' => 'member',
       'non-member' => 'non-member',
     ),
-  );
-
-  // Exported og permission: 'node:project:view field_organisation_address field'
-  $permissions['node:project:view field_organisation_address field'] = array(
-    'roles' => array(),
-  );
-
-  // Exported og permission: 'node:project:view field_organisation_image field'
-  $permissions['node:project:view field_organisation_image field'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-      'non-member' => 'non-member',
-    ),
-  );
-
-  // Exported og permission: 'node:project:view field_organisation_type field'
-  $permissions['node:project:view field_organisation_type field'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-      'non-member' => 'non-member',
-    ),
-  );
-
-  // Exported og permission: 'node:project:view field_organisation_website field'
-  $permissions['node:project:view field_organisation_website field'] = array(
-    'roles' => array(),
   );
 
   // Exported og permission: 'node:project:view field_project_people field'
